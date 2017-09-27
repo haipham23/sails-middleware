@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  '/api/sample': 'ApiController.getSampleData'
 
   /***************************************************************************
   *                                                                          *
