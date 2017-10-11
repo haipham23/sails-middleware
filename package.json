@@ -30,6 +30,14 @@
     "test": "cross-env PORT=9090 mocha test/bootstrap.test.js test/**/*.test.js",
     "cover": "nyc --reporter=html npm test"
   },
+  "nyc": {
+    "exclude": [
+      "test",
+      "api/policies",
+      "api/responses",
+      "Gruntfile.js"
+    ]
+  },
   "main": "app.js",
   "repository": {
     "type": "git",
