@@ -27,7 +27,8 @@
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js",
-    "test": "cross-env PORT=9090 mocha test/bootstrap.test.js test/**/*.test.js"
+    "test": "cross-env PORT=9090 mocha test/bootstrap.test.js test/**/*.test.js",
+    "cover": "nyc --reporter=html npm test"
   },
   "main": "app.js",
   "repository": {
@@ -41,6 +42,7 @@
     "cross-env": "^5.0.5",
     "istanbul": "^0.4.5",
     "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
     "supertest": "^3.0.0"
   }
 }
